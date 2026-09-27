@@ -1,0 +1,29 @@
+{
+  "name": "mcp-staffing-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small, self-contained MCP server for talks and demos: consulting-firm staffing, in-memory fictional data, four tools.",
+  "bin": {
+    "mcp-staffing-demo": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "26.5.0",
+    "typescript": "5.9.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brbousnguar/mcp-staffing-demo"
+  }
+}
